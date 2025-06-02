@@ -26,20 +26,42 @@ Siga as instruções na tela. Ele irá instalar:
 
 - hls (Haskell Language Server, para integração com VSCode ou outro editor)
 
+🔄 Após a instalação, reinicie o terminal ou PowerShell.
+
 🧠 Passo 2 — Verificar se está funcionando
 Testa no terminal:
 
-powershell
-Copiar
-Editar
+```powershell
 ghc --version
 cabal --version
 ghcup --version
+stack --version
+hls --version
+```
 Tudo deve responder normalmente.
 
-
-🔄 Após a instalação, reinicie o terminal ou PowerShell.
-🔄 Atualize o ghcup:
+🔄 Verifique se existem versões mais atualizadas, caso queira instalar.
 ```bash
 ghcup upgrade
 ```
+
+Verifique se o PATH está configurado corretamente:
+```bash
+where ghc
+where cabal
+where stack
+where ghcup
+```
+
+🧠 Passo 3 — Configurar o ambiente de desenvolvimento
+Para usar Haskell de forma eficiente, é recomendado configurar um editor de código com suporte a Haskell. O Visual Studio Code é uma excelente opção.
+🔗 Instale o Visual Studio Code:
+👉 https://code.visualstudio.com/
+🔄 Instale a extensão Haskell Language Server:
+1. Abra o Visual Studio Code.
+2. Vá para a aba de extensões (ícone de quadrado no menu lateral).
+3. Pesquise por "Haskell Language Server".
+4. Instale a extensão oficial.
+5. Reinicie o Visual Studio Code.
+
+🧠 Passo 4 — Criar um projeto Haskell
