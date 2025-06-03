@@ -65,3 +65,23 @@ Para usar Haskell de forma eficiente, é recomendado configurar um editor de có
 5. Reinicie o Visual Studio Code.
 
 🧠 Passo 4 — Criar um projeto Haskell
+
+
+RODE 
+GHCI
+
+ghci é o interpretador interativo de Haskell. Para iniciar, execute:
+```bash
+ghci
+```
+Para rodar
+um arquivo Haskell, crie um arquivo chamado `Main.hs` com o seguinte conteúdo:
+```haskell
+main :: IO ()
+main = putStrLn "Hello, Haskell!"
+```
+Para carregar e executar o arquivo no GHCI, use os seguintes comandos:
+```haskell
+:l Main.hs
+main
+```
